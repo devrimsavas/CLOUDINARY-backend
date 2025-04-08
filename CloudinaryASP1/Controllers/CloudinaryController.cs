@@ -38,6 +38,36 @@ namespace CloudinaryASP1.Controllers
             });
         }
 
+        [HttpDelete("delete")]
+        public async Task<IActionResult> DeleteImage([FromBody] ImageRequest request)
+        {
+            if (string.IsNullOrEmpty(request.PublicId))
+                return BadRequest("PublicId is required");
+
+            var result = await _cloudinaryService.DeleteImageAsync(request.PublicId);
+            return Ok(new
+            {
+                message = "Delete operation completed",
+                result = result.Result
+            });
+        }
+
+        [HttpPost("get")]
+        public IActionResult GetImage([FromBody] ImageRequest request)
+        {
+            if (string.IsNullOrEmpty(request.PublicId))
+                return BadRequest("PublicId is required");
+
+            var url = _cloudinaryService.GetImageUrl(request.PublicId);
+            return Ok(new
+            {
+                message = "Image URL fetched",
+                url
+            });
+        }
+
+
+
 
 
     }

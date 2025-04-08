@@ -42,6 +42,23 @@ namespace CloudinaryASP1.Service
             return await _cloudinary.UploadAsync(uploadParams);
         }
 
+        public async Task<DeletionResult> DeleteImageAsync(string publicId)
+        {
+            var deleteParams = new DeletionParams(publicId);
+            var result = await _cloudinary.DestroyAsync(deleteParams);
+            return result;
+        }
+
+
+        public string GetImageUrl(string publicId)
+        {
+            return _cloudinary.Api.UrlImgUp.Secure(true).BuildUrl(publicId);
+        }
+        
+
+
+
+
 
 
     }
