@@ -1,0 +1,5 @@
+
+# .env
+CLOUDINARY_CLOUD_NAME=<yourcloudname>
+CLOUDINARY_API_KEY=<yourkey>
+CLOUDINARY_API_SECRET=<your-secret-key>
