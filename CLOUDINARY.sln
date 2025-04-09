@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cloudinaryasp1", "CloudinaryASP1\cloudinaryasp1.csproj", "{DBD11F16-2651-FF38-02C2-B96692A35D76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBD11F16-2651-FF38-02C2-B96692A35D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD11F16-2651-FF38-02C2-B96692A35D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD11F16-2651-FF38-02C2-B96692A35D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD11F16-2651-FF38-02C2-B96692A35D76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A0283D5-884D-4DC1-9DA1-522452BC63C1}
+	EndGlobalSection
+EndGlobal
